@@ -1563,7 +1563,7 @@ class $modify(EndLevelLayer) {
 		if ((!mod->getSettingValue<bool>("auto_safe_mode") || isAndroid) && playedMacro) {
 			auto winSize = CCDirector::sharedDirector()->getWinSize();
 			auto layer = reinterpret_cast<CCLayer*>(this->getChildren()->objectAtIndex(0));
-			auto watermarkxd = CCLabelBMFont::create("Recorded with xdBot.", "chatFont.fnt");
+			auto watermarkxd = CCLabelBMFont::create(" ", "chatFont.fnt");
 			watermarkxd->setOpacity(60);
 			watermarkxd->setAnchorPoint(ccp(0.0f,0.5f));
 			watermarkxd->setPosition(winSize/2 + ccp(-winSize.width/2, -winSize.height/2) + ccp(3, 6));
